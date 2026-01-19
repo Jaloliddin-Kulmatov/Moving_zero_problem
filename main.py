@@ -11,3 +11,8 @@ def moveZeroes(nums: list) -> list:
 
     return nums
 
+nums = [1,2,3,4,5,6,7]
+k = 3
+first_part = len(nums) - k
+new_list = nums[first_part:] + nums[:first_part]
+print(new_list)
